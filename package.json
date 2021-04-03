@@ -1,0 +1,40 @@
+{
+  "name": "earthquake-alert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefan-feltmann/Earthquake-Alert.git"
+  },
+  "author": "Stefan M. Feltmann",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/stefan-feltmann/Earthquake-Alert/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "homepage": "https://github.com/stefan-feltmann/Earthquake-Alert#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "@types/node": "^14.14.37",
+    "aws-cdk": "^1.96.0",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
+    "ts-jest": "^26.5.4",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-lambda": "^1.96.0",
+    "@aws-cdk/aws-s3": "^1.96.0"
+  }
+}
