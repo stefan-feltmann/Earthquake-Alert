@@ -1,5 +1,7 @@
 import { GetQuakeInfo, ApiUrl } from './fetchQuakeInfo'
 
+jest.setTimeout(50000)
+
 describe('GetQuakeInfo', () => {
   test('', async () => {
     let defaultApi = new GetQuakeInfo()

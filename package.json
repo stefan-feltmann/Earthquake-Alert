@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test-watch": "jest -w"
+    "test-watch": "jest -w",
+    "start-hasura-dev": "cd docker && docker-compose up -d",
+    "stop-hasura-dev": "cd docker && docker-compose down",
+    "hasura-console-dev": "cd docker && hasura console --endpoint http://localhost:8080 --admin-secret admin"
   },
   "repository": {
     "type": "git",

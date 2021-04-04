@@ -17,7 +17,6 @@ export class GetQuakeInfo {
     return await nodeFetch(this.currentUrl)
       .then((res) => res.json())
       .then((json) => {
-        //test
         return json
       })
   }
