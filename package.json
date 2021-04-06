@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "npm run start-hasura-dev && jest",
     "test-watch": "jest -w",
+    "postinstall": "ts-node scripts/install-handler-deps.ts",
     "start-hasura-dev": "cd docker && docker-compose up -d",
     "stop-hasura-dev": "cd docker && docker-compose down",
+    "docker-clean": "docker container prune && docker volume prune",
     "hasura-console-dev": "cd docker && hasura console --endpoint http://localhost:8080 --admin-secret admin"
   },
   "repository": {
@@ -41,7 +43,6 @@
   "dependencies": {
     "@aws-cdk/aws-lambda": "^1.96.0",
     "@aws-cdk/aws-s3": "^1.96.0",
-    "geojson": "^0.5.0",
-    "node-fetch": "^2.6.1"
+    "geojson": "^0.5.0"
   }
 }
