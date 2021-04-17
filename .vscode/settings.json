@@ -5,6 +5,25 @@
         "Feltmann",
         "dmail",
         "hasura"
-    ]
-  }
+    ],
+    "editor.tabSize": 2,
+    "javascript.validate.enable": false,
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#d9534f",
+      "activityBar.activeBorder": "#5bc0de",
+      "activityBar.foreground": "#15202b",
+      "activityBar.inactiveForeground": "#15202b99",
+      "activityBarBadge.background": "#5bc0de",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "titleBar.activeBackground": "#5cb85c",
+      "titleBar.inactiveBackground": "#5cb85c99",
+      "titleBar.activeForeground": "#15202b",
+      "titleBar.inactiveForeground": "#15202b99",
+      "statusBar.background": "#5cb85c",
+      "statusBarItem.hoverBackground": "#449d44",
+      "statusBar.foreground": "#15202b",
+      "activityBar.activeBackground": "#d9534f"
+    },
+  "peacock.color": "#5cb85c"
+}
   
