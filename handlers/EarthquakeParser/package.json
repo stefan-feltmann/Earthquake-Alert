@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^2.6.1",
     "axios": "^0.21.0",
     "graphql": "^15.5.0",
-    "graphql-tag": "^2.11.0"
+    "graphql-tag": "^2.11.0",
+    "node-fetch": "^2.6.1"
   }
 }

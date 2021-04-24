@@ -10,6 +10,9 @@
     "test": "jest",
     "test-watch": "jest -w",
     "postinstall": "ts-node scripts/install-handler-deps.ts",
+    "synth": "cdk synth",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy",
     "start-hasura-dev": "cd docker && docker-compose up -d",
     "stop-hasura-dev": "cd docker && docker-compose down",
     "docker-clean": "docker container prune && docker volume prune",
@@ -32,24 +35,25 @@
   },
   "homepage": "https://github.com/stefan-feltmann/Earthquake-Alert#readme",
   "devDependencies": {
-    "@types/geojson": "^7946.0.7",
-    "husky": "^6.0.0",
-    "prettier": "^2.2.1",
-    "pretty-quick": "^3.1.0",
     "@aws-cdk/assert": "1.98.0",
+    "@types/geojson": "^7946.0.7",
     "@types/jest": "^26.0.10",
     "@types/node": "10.17.27",
-    "jest": "^26.4.2",
-    "ts-jest": "^26.2.0",
     "aws-cdk": "1.98.0",
+    "husky": "^6.0.0",
+    "jest": "^26.4.2",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
+    "ts-jest": "^26.2.0",
     "ts-node": "^9.0.0",
     "typescript": "~3.9.7"
   },
   "dependencies": {
     "@aws-cdk/aws-lambda": "^1.96.0",
+    "@aws-cdk/aws-lambda-nodejs": "^1.98.0",
     "@aws-cdk/aws-s3": "^1.96.0",
+    "@aws-cdk/core": "^1.98.0",
     "geojson": "^0.5.0",
-    "@aws-cdk/core": "1.98.0",
     "source-map-support": "^0.5.16"
   }
 }
