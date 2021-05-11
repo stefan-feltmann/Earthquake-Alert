@@ -76,3 +76,5 @@ typings/
 .fusebox/
 
 cdk.out/
+secret/add-secret.sh
+cdk.context.json

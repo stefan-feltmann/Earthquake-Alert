@@ -3,11 +3,11 @@ import * as cdk from '@aws-cdk/core';
 import * as EarthquakeAlert from '../lib/earthquake-alert-stack';
 
 test('Empty Stack', () => {
-    const app = new cdk.App();
-    // WHEN
+    // const app = new cdk.App();
+    // // WHEN
     // const stack = new EarthquakeAlert.EarthquakeAlertStack(app, 'MyTestStack');
     // console.log(stack)
-    // THEN
+    // // THEN
     // expectCDK(stack).to(matchTemplate({
     //   "Resources": {}
     // }, MatchStyle.EXACT))
