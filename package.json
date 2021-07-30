@@ -53,6 +53,7 @@
     "@aws-cdk/aws-ecs": "^1.114.0",
     "@aws-cdk/aws-ecs-patterns": "^1.114.0",
     "@aws-cdk/aws-events-targets": "^1.114.0",
+    "@aws-cdk/aws-certificatemanager": "^1.114.0",
     "@aws-cdk/aws-lambda-nodejs": "^1.114.0",
     "@aws-cdk/aws-rds": "^1.114.0",
     "@aws-cdk/aws-secretsmanager": "^1.114.0",

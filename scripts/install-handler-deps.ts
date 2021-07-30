@@ -1,7 +1,7 @@
 import fs = require('fs')
 import child_process = require('child_process')
 ;(async () => {
-  const dirs = ['handlers']
+  const dirs = ['handlers', 'lib']
   for (const dir of dirs) {
     process.chdir(dir)
     const items = fs.readdirSync('./')
@@ -11,17 +11,23 @@ import child_process = require('child_process')
       if (!stat.isDirectory()) {
         continue
       }
-      const handlerItems = fs.readdirSync(handlerPath)
-      if (handlerItems.some((item) => item === 'package.json')) {
-        console.log(`Installing dependencies for ${handlerDir}...`)
-        process.chdir(handlerDir)
-        child_process.execSync('npm install')
-        child_process.execSync('npm ci')
-        process.chdir('..')
-      }
+      install(handlerPath, handlerDir)
     }
+
     process.chdir('..')
+    install(`./${dir}`, dir)
   }
 
   console.log('Done installing handler dependencies!')
 })()
+
+function install(handlerPath: string, handlerDir: string) {
+  const handlerItems = fs.readdirSync(handlerPath)
+  if (handlerItems.some((item) => item === 'package.json')) {
+    console.log(`Installing dependencies for ${handlerDir}...`)
+    process.chdir(handlerDir)
+    child_process.execSync('npm install')
+    child_process.execSync('npm ci')
+    process.chdir('..')
+  }
+}
